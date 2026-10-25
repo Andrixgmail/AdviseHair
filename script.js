@@ -8,8 +8,8 @@ const SETTINGS = {
   whatsapp: "27753366477",
 
   // ⚠️ Replace these with your real profile links / names
-  instagramUrl: "https://www.instagram.com/advisehair",
-  instagramHandle: "@advisehair",
+  instagramUrl: "https://www.instagram.com/advise_hair/",
+  instagramHandle: "@advise_hair",
   facebookUrl: "https://www.facebook.com/advisehair",
   facebookName: "Advise Hair",
 
