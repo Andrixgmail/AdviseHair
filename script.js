@@ -1,5 +1,5 @@
 /* =========================================================
-   Advise Hair — site settings & products
+   Advise Hair: site settings & products
    Edit the values in SETTINGS and PRODUCTS to update the site.
    ========================================================= */
 
@@ -17,13 +17,13 @@ const SETTINGS = {
 };
 
 /*  Each product:
-    name    – product name
-    img     – photo in assets/products/
-    tags    – used by the filter buttons: straight, curly, bob, colour, glueless
-    sizes   – list of [label, price]  (label can be a length or an option)
-    price   – single price (only for products without sizes)
-    oldPrice – optional crossed-out price
-    badge   – optional little label on the photo                          */
+    name    : product name
+    img     : photo in assets/products/
+    tags    : used by the filter buttons: straight, curly, bob, colour, glueless
+    sizes   : list of [label, price]  (label can be a length or an option)
+    price   : single price (only for products without sizes)
+    oldPrice : optional crossed-out price
+    badge   : optional little label on the photo                          */
 const PRODUCTS = [
   { name: "Chocolate Ombré SDD", img: "p1.jpg", tags: ["straight", "colour"], badge: "Ombré",
     sizes: [["22\"", 2800], ["24\"", 3200]] },
@@ -100,7 +100,7 @@ const grid = document.getElementById("productGrid");
 
 function orderMessage(p, sizeLabel, price) {
   const what = sizeLabel ? `${p.name} (${sizeLabel.replace('"', " inch")})` : p.name;
-  return `${SETTINGS.greeting} I'd like to order the ${what} – ${rand(price)}. Is it available?`;
+  return `${SETTINGS.greeting} I'd like to order the ${what} for ${rand(price)}. Is it available?`;
 }
 
 function renderProducts(filter = "all") {
@@ -200,7 +200,7 @@ nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
   const open = idx >= 1 && idx <= 5;
   status.classList.add(open ? "open" : "closed");
   status.textContent = open
-    ? "We're open today — message us any time."
+    ? "We're open today. Message us any time."
     : "Closed today (weekend). Leave a WhatsApp message and we'll reply on Monday.";
 })();
 

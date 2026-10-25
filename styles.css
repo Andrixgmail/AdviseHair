@@ -286,6 +286,9 @@ p { margin: 0 0 1rem; }
 .footer-socials a:hover { background: rgba(201, 162, 74, .15); }
 .footer-socials svg { width: 20px; height: 20px; }
 .copy { color: #7d6f62; font-size: .85rem; margin: 0; }
+.credit { color: #7d6f62; font-size: .8rem; margin: 0; letter-spacing: .04em; }
+.credit a { color: var(--gold); text-decoration: none; }
+.credit a:hover { color: var(--gold-light); text-decoration: underline; }
 
 /* ---------- Floating WhatsApp ---------- */
 .wa-float {
