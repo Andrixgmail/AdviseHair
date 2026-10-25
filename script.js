@@ -10,7 +10,7 @@ const SETTINGS = {
   // ⚠️ Replace these with your real profile links / names
   instagramUrl: "https://www.instagram.com/advise_hair/",
   instagramHandle: "@advise_hair",
-  facebookUrl: "https://www.facebook.com/advisehair",
+  facebookUrl: "https://www.facebook.com/share/1A1rskQSzW/",
   facebookName: "Advise Hair",
 
   greeting: "Hi Advise Hair! 👋",
